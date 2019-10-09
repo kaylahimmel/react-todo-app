@@ -2,13 +2,18 @@ import React from 'react';
 import './styles/styles.css';
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
-import List from '../src/components/List'
+import ListItem from './components/ListItem'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <List />
+      <div className="list">
+        <ListItem />
+        <ListItem />
+        <ListItem />
+        <ListItem />
+      </div>
       <Footer />
     </div>
   );

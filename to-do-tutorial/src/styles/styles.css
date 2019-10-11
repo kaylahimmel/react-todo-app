@@ -1,8 +1,9 @@
-body {
+html, body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #333;
   line-height: 1;
+  width: 100vw;
 }
 
 .navbar, .footer {

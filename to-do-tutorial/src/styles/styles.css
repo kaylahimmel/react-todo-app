@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #333;
+  line-height: 1;
 }
 
 .navbar, .footer {
@@ -36,11 +37,15 @@ input[type=checkbox] {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 30px 20px 0;
+  padding: 0 20px;
   width: 90%;
   font-size: 22px;
-
 }
+
+.list-item:first-child {
+  margin-top: 30px;
+}
+
 
 .footer {
   font-size: 22px;

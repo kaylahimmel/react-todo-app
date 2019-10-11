@@ -3,20 +3,26 @@ import './styles/styles.css';
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import ListItem from './components/ListItem'
+import todoData from './todoData'
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <div className="list">
-        <ListItem />
-        <ListItem />
-        <ListItem />
-        <ListItem />
+class App extends React.Component {
+  render() {
+    const taskComponent = todoData.map(task => {
+      return (
+        <div>
+          <ListItem key={task.id} task={task} />
+        </div>
+      )
+    })
+  
+    return (
+      <div className="App">
+        <Header />
+        {taskComponent}
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
+    )
+  }
 }
 
 export default App;

@@ -36,8 +36,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        {taskComponent}
-        <Footer />
+        <div className="list">
+          {taskComponent}
+        </div>
       </div>
     )
   }
